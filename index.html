@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
 	<meta name="author" content="Copyright 2024 Trevor Casey All Rights Reserved" />
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Zain" rel="stylesheet">
+	<script src="js/color-modes.js"></script>
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
@@ -19,24 +20,57 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<style type="text/css">
+      .bd-placeholder-img{font-size:1.125rem;text-anchor:middle;-webkit-user-select:none;-moz-user-select:none;user-select:none}
+      @media (min-width: 768px){.bd-placeholder-img-lg{font-size:3.5rem}}
+      .b-example-divider{width:100%;height:3rem;background-color:#0000001a;border:solid rgba(0,0,0,.15);border-width:1px 0;box-shadow:inset 0 .5em 1.5em #0000001a,inset 0 .125em .5em #00000026}
+      .b-example-vr{flex-shrink:0;width:1.5rem;height:100vh}
+      .bi{vertical-align:-.125em;fill:currentColor}
+      .nav-scroller{position:relative;z-index:2;height:2.75rem;overflow-y:hidden}
+      .nav-scroller .nav{display:flex;flex-wrap:nowrap;padding-bottom:1rem;margin-top:-1px;overflow-x:auto;text-align:center;white-space:nowrap;-webkit-overflow-scrolling:touch}
+      .btn-bd-primary{--bd-violet-bg: #712cf9;--bd-violet-rgb: 112.520718, 44.062154, 249.437846;--bs-btn-font-weight: 600;--bs-btn-color: var(--bs-white);--bs-btn-bg: var(--bd-violet-bg);--bs-btn-border-color: var(--bd-violet-bg);--bs-btn-hover-color: var(--bs-white);--bs-btn-hover-bg: #6528e0;--bs-btn-hover-border-color: #6528e0;--bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);--bs-btn-active-color: var(--bs-btn-hover-color);--bs-btn-active-bg: #5a23c8;--bs-btn-active-border-color: #5a23c8}
+      .bd-mode-toggle{z-index:1500}.bd-mode-toggle .bi{width:1em;height:1em}
+	  .bd-mode-toggle .dropdown-menu .active .bi{display:block!important}
+    </style>
+
 	</head>
 	<body>
+		<!-- width="24" height="24" fill="currentColor" -->
+		<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+			<symbol id="language" viewBox="0 0 24 24" width="16" height="16"><path d="m17,11c-.4,0-.75.23-.91.59l-4,9,1.83.81,1.07-2.41h4.03l1.07,2.41,1.83-.81-4-9c-.16-.36-.52-.59-.91-.59Zm-1.13,6l1.13-2.54,1.13,2.54h-2.26Z"></path><path d="m12.25,14.97l.49-1.94c-.13-.03-1.6-.43-3.17-1.42,1.4-1.41,2.49-3.26,2.74-5.61h1.68v-2h-5v-2h-2v2H2v2h8.3c-.25,1.91-1.19,3.34-2.31,4.4-.69-.65-1.31-1.44-1.74-2.4h-2.13c.5,1.44,1.33,2.63,2.3,3.61-1.57.99-3.04,1.39-3.17,1.42l.49,1.94c1.18-.3,2.76-.96,4.26-2.02,1.49,1.06,3.08,1.72,4.25,2.02Z"></path></symbol>
+			<symbol id="check2" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path></symbol>
+			<symbol id="de" version="1.1" viewBox="0 0 36.6 24"><defs><style>.st0{fill: #ffe15a;}.st1{fill: #f8d147;}.st2{fill: #cc2b1d;}.st3{fill: #464655;}.st4{fill: #ff4b55;}.st5{display: none;}</style></defs><g class="st5"><path d="M2.8,0h31C35.3,0,36.6,1.3,36.6,2.8v5.2H0V2.8C0,1.3,1.3,0,2.8,0Z"/><path class="st1" d="M0,16h36.6v5.2c0,1.5-1.3,2.8-2.8,2.8H2.8c-1.5,0-2.8-1.3-2.8-2.8v-5.2h0Z"/><path class="st2" d="M0,8h36.6v8H0v-8Z"/></g><g><path class="st3" d="M2.8,0h31C35.3,0,36.6,1.3,36.6,2.8v5.2H0V2.8C0,1.3,1.3,0,2.8,0Z"/><path class="st0" d="M0,16h36.6v5.2c0,1.5-1.3,2.8-2.8,2.8H2.8c-1.5,0-2.8-1.3-2.8-2.8v-5.2h0Z"/><path class="st4" d="M0,8h36.6v8H0v-8Z"/></g></symbol>
+			<symbol id="en" baseProfile="tiny" version="1.2" viewBox="0 0 8192 5461.3"><g><path d="M682.6,5324.8h6826.8c249.4,0,461.2-169.5,525.8-399.1H156.8c64.6,229.5,276.4,399,525.8,399.1Z" fill="#ff4b55"/><path d="M156.8,4925.7h7878.4c13.2-46.8,20.3-96.2,20.3-147.1v-252H136.5v252c0,50.9,7.1,100.2,20.3,147.1Z" fill="#f5f5f5"/><rect x="136.5" y="4127.5" width="7918.9" height="399.1" fill="#ff4b55"/><rect x="136.5" y="3728.5" width="7918.9" height="399.1" fill="#f5f5f5"/><polygon points="8055.5 3728.4 8055.5 3329.3 136.5 3329.3 136.5 3728.4 136.5 3728.5 8055.5 3728.5 8055.5 3728.4" fill="#ff4b55"/><polygon points="8055.5 2930.2 3670.1 2930.2 3670.1 2755 136.5 2755 136.5 3329.3 8055.5 3329.3 8055.5 2930.2" fill="#f5f5f5"/><polygon points="8055.5 2930.2 8055.5 2755 8055.5 2531.1 3670.1 2531.1 3670.1 2755 3670.1 2930.2 8055.5 2930.2" fill="#ff4b55"/><polygon points="8055.5 2132.1 3705.2 2132.1 3705.2 2132 3304.1 2132 3304.1 2531.1 3670.1 2531.1 8055.5 2531.1 8055.5 2132.1" fill="#f5f5f5"/><polygon points="8055.5 2132.1 8055.5 2132 8055.5 1732.9 3705.2 1732.9 3705.2 2132 3705.2 2132.1 8055.5 2132.1" fill="#ff4b55"/><polygon points="8055.5 1333.8 3713.5 1333.8 3304.1 1333.8 3304.1 1732.9 3705.2 1732.9 8055.5 1732.9 8055.5 1333.8" fill="#f5f5f5"/><rect x="3713.5" y="934.8" width="4341.9" height="399.1" fill="#ff4b55"/><path d="M8055.5,934.7v-252c0-50.9-7.1-100.2-20.2-147H3304.1v399.1h4751.4Z" fill="#f5f5f5"/><path d="M7509.3,136.5h-3839.2v399.1h4365.1c-64.6-229.6-276.4-399.1-525.9-399.1Z" fill="#ff4b55"/></g><path d="M138,719.9v2084.5c0,69.5,56.3,125.8,125.8,125.8h3372c103.3,0,187-83.7,187-187V274.9c0-76.4-61.9-138.4-138.4-138.4H721.4c-322.2,0-583.4,261.2-583.4,583.4Z" fill="#41479b"/><g><g><polygon points="3153.7 850.4 3258.5 777.2 3129 777.2 3088.9 658.7 3048.9 777.2 2919.4 777.2 3024.2 850.4 2984.1 968.9 3088.9 895.7 3193.7 968.9 3153.7 850.4" fill="#f5f5f5"/><polygon points="3153.7 1327.4 3258.5 1254.2 3129 1254.2 3088.9 1135.7 3048.9 1254.2 2919.4 1254.2 3024.2 1327.4 2984.1 1445.9 3088.9 1372.7 3193.7 1445.9 3153.7 1327.4" fill="#f5f5f5"/><polygon points="3153.7 1804.5 3258.5 1731.2 3129 1731.2 3088.9 1612.7 3048.9 1731.2 2919.4 1731.2 3024.2 1804.5 2984.1 1923 3088.9 1849.7 3193.7 1923 3153.7 1804.5" fill="#f5f5f5"/><polygon points="3153.7 2276.1 3258.5 2202.9 3129 2202.9 3088.9 2084.4 3048.9 2202.9 2919.4 2202.9 3024.2 2276.1 2984.1 2394.6 3088.9 2321.4 3193.7 2394.6 3153.7 2276.1" fill="#f5f5f5"/></g><g><polygon points="3523 624.3 3627.8 551.1 3498.3 551.1 3458.2 432.6 3418.2 551.1 3288.7 551.1 3393.5 624.4 3353.4 742.9 3458.2 669.6 3563 742.9 3523 624.3" fill="#f5f5f5"/><polygon points="3525.2 1097.7 3630 1024.4 3500.4 1024.4 3460.4 905.9 3420.4 1024.4 3290.8 1024.4 3395.6 1097.7 3355.6 1216.2 3460.4 1142.9 3565.2 1216.2 3525.2 1097.7" fill="#f5f5f5"/><polygon points="3523 1570 3627.8 1496.8 3498.3 1496.8 3458.2 1378.3 3418.2 1496.8 3288.7 1496.8 3393.5 1570 3353.4 1688.5 3458.2 1615.3 3563 1688.5 3523 1570" fill="#f5f5f5"/><polygon points="3523 2042.3 3627.8 1969.1 3498.3 1969.1 3458.2 1850.6 3418.2 1969.1 3288.7 1969.1 3393.5 2042.3 3353.4 2160.8 3458.2 2087.6 3563 2160.8 3523 2042.3" fill="#f5f5f5"/><polygon points="3523 2508.6 3627.8 2435.3 3498.3 2435.3 3458.2 2316.8 3418.2 2435.3 3288.7 2435.3 3393.5 2508.6 3353.4 2627.1 3458.2 2553.8 3563 2627.1 3523 2508.6" fill="#f5f5f5"/></g><g><polygon points="2786.7 627.8 2891.6 554.6 2762 554.6 2722 436.1 2681.9 554.6 2552.4 554.6 2657.2 627.9 2617.2 746.4 2722 673.1 2826.8 746.4 2786.7 627.8" fill="#f5f5f5"/><polygon points="2788.9 1101.2 2893.7 1028 2764.2 1028 2724.1 909.5 2684.1 1028 2554.5 1028 2659.4 1101.2 2619.3 1219.7 2724.1 1146.5 2828.9 1219.7 2788.9 1101.2" fill="#f5f5f5"/><polygon points="2786.7 1573.5 2891.6 1500.3 2762 1500.3 2722 1381.8 2681.9 1500.3 2552.4 1500.3 2657.2 1573.5 2617.2 1692 2722 1618.8 2826.8 1692 2786.7 1573.5" fill="#f5f5f5"/><polygon points="2786.7 2045.9 2891.6 1972.6 2762 1972.6 2722 1854.1 2681.9 1972.6 2552.4 1972.6 2657.2 2045.9 2617.2 2164.4 2722 2091.1 2826.8 2164.4 2786.7 2045.9" fill="#f5f5f5"/><polygon points="2786.7 2512.1 2891.6 2438.9 2762 2438.9 2722 2320.4 2681.9 2438.9 2552.4 2438.9 2657.2 2512.1 2617.2 2630.6 2722 2557.4 2826.8 2630.6 2786.7 2512.1" fill="#f5f5f5"/></g><g><polygon points="2044.1 627.8 2148.9 554.6 2019.3 554.6 1979.3 436.1 1939.3 554.6 1809.7 554.6 1914.5 627.9 1874.5 746.4 1979.3 673.1 2084.1 746.4 2044.1 627.8" fill="#f5f5f5"/><polygon points="2046.2 1101.2 2151 1028 2021.5 1028 1981.4 909.5 1941.4 1028 1811.9 1028 1916.7 1101.2 1876.6 1219.7 1981.4 1146.5 2086.2 1219.7 2046.2 1101.2" fill="#f5f5f5"/><polygon points="2044.1 1573.5 2148.9 1500.3 2019.3 1500.3 1979.3 1381.8 1939.3 1500.3 1809.7 1500.3 1914.5 1573.5 1874.5 1692 1979.3 1618.8 2084.1 1692 2044.1 1573.5" fill="#f5f5f5"/><polygon points="2044.1 2045.9 2148.9 1972.6 2019.3 1972.6 1979.3 1854.1 1939.3 1972.6 1809.7 1972.6 1914.5 2045.9 1874.5 2164.4 1979.3 2091.1 2084.1 2164.4 2044.1 2045.9" fill="#f5f5f5"/><polygon points="2044.1 2512.1 2148.9 2438.9 2019.3 2438.9 1979.3 2320.4 1939.3 2438.9 1809.7 2438.9 1914.5 2512.1 1874.5 2630.6 1979.3 2557.4 2084.1 2630.6 2044.1 2512.1" fill="#f5f5f5"/></g><g><polygon points="1317.7 627.8 1422.5 554.6 1293 554.6 1253 436.1 1212.9 554.6 1083.4 554.6 1188.2 627.9 1148.1 746.4 1253 673.1 1357.8 746.4 1317.7 627.8" fill="#f5f5f5"/><polygon points="1319.9 1101.2 1424.7 1028 1295.1 1028 1255.1 909.5 1215.1 1028 1085.5 1028 1190.3 1101.2 1150.3 1219.7 1255.1 1146.5 1359.9 1219.7 1319.9 1101.2" fill="#f5f5f5"/><polygon points="1317.7 1573.5 1422.5 1500.3 1293 1500.3 1253 1381.8 1212.9 1500.3 1083.4 1500.3 1188.2 1573.5 1148.1 1692 1253 1618.8 1357.8 1692 1317.7 1573.5" fill="#f5f5f5"/><polygon points="1317.7 2045.9 1422.5 1972.6 1293 1972.6 1253 1854.1 1212.9 1972.6 1083.4 1972.6 1188.2 2045.9 1148.1 2164.4 1253 2091.1 1357.8 2164.4 1317.7 2045.9" fill="#f5f5f5"/><polygon points="1317.7 2512.1 1422.5 2438.9 1293 2438.9 1253 2320.4 1212.9 2438.9 1083.4 2438.9 1188.2 2512.1 1148.1 2630.6 1253 2557.4 1357.8 2630.6 1317.7 2512.1" fill="#f5f5f5"/></g><g><polygon points="580.9 624.3 685.7 551.1 556.1 551.1 516.1 432.6 476.1 551.1 346.5 551.1 451.3 624.4 411.3 742.9 516.1 669.6 620.9 742.9 580.9 624.3" fill="#f5f5f5"/><polygon points="583 1097.7 687.8 1024.4 558.3 1024.4 518.3 905.9 478.2 1024.4 348.7 1024.4 453.5 1097.7 413.5 1216.2 518.3 1142.9 623.1 1216.2 583 1097.7" fill="#f5f5f5"/><polygon points="580.9 1570 685.7 1496.8 556.1 1496.8 516.1 1378.3 476.1 1496.8 346.5 1496.8 451.3 1570 411.3 1688.5 516.1 1615.3 620.9 1688.5 580.9 1570" fill="#f5f5f5"/><polygon points="580.9 2042.3 685.7 1969.1 556.1 1969.1 516.1 1850.6 476.1 1969.1 346.5 1969.1 451.3 2042.3 411.3 2160.8 516.1 2087.6 620.9 2160.8 580.9 2042.3" fill="#f5f5f5"/><polygon points="580.9 2508.6 685.7 2435.3 556.1 2435.3 516.1 2316.8 476.1 2435.3 346.5 2435.3 451.3 2508.6 411.3 2627.1 516.1 2553.8 620.9 2627.1 580.9 2508.6" fill="#f5f5f5"/></g><g><polygon points="2421.4 857.2 2526.2 783.9 2396.7 783.9 2356.7 665.4 2316.6 783.9 2187.1 783.9 2291.9 857.2 2251.9 975.7 2356.7 902.4 2461.5 975.7 2421.4 857.2" fill="#f5f5f5"/><polygon points="2421.4 1334.2 2526.2 1260.9 2396.7 1260.9 2356.7 1142.4 2316.6 1260.9 2187.1 1260.9 2291.9 1334.2 2251.9 1452.7 2356.7 1379.4 2461.5 1452.7 2421.4 1334.2" fill="#f5f5f5"/><polygon points="2421.4 1811.2 2526.2 1737.9 2396.7 1737.9 2356.7 1619.4 2316.6 1737.9 2187.1 1737.9 2291.9 1811.2 2251.9 1929.7 2356.7 1856.4 2461.5 1929.7 2421.4 1811.2" fill="#f5f5f5"/><polygon points="2421.4 2282.8 2526.2 2209.6 2396.7 2209.6 2356.7 2091.1 2316.6 2209.6 2187.1 2209.6 2291.9 2282.8 2251.9 2401.3 2356.7 2328.1 2461.5 2401.3 2421.4 2282.8" fill="#f5f5f5"/></g><g><polygon points="1687.6 857.2 1792.4 783.9 1662.8 783.9 1622.8 665.4 1582.8 783.9 1453.2 783.9 1558 857.2 1518 975.7 1622.8 902.4 1727.6 975.7 1687.6 857.2" fill="#f5f5f5"/><polygon points="1687.6 1334.2 1792.4 1260.9 1662.8 1260.9 1622.8 1142.4 1582.8 1260.9 1453.2 1260.9 1558 1334.2 1518 1452.7 1622.8 1379.4 1727.6 1452.7 1687.6 1334.2" fill="#f5f5f5"/><polygon points="1687.6 1811.2 1792.4 1737.9 1662.8 1737.9 1622.8 1619.4 1582.8 1737.9 1453.2 1737.9 1558 1811.2 1518 1929.7 1622.8 1856.4 1727.6 1929.7 1687.6 1811.2" fill="#f5f5f5"/><polygon points="1687.6 2282.8 1792.4 2209.6 1662.8 2209.6 1622.8 2091.1 1582.8 2209.6 1453.2 2209.6 1558 2282.8 1518 2401.3 1622.8 2328.1 1727.6 2401.3 1687.6 2282.8" fill="#f5f5f5"/></g><g><polygon points="944.6 857.2 1049.4 783.9 919.9 783.9 879.9 665.4 839.8 783.9 710.3 783.9 815.1 857.2 775.1 975.7 879.9 902.4 984.7 975.7 944.6 857.2" fill="#f5f5f5"/><polygon points="944.6 1334.2 1049.4 1260.9 919.9 1260.9 879.9 1142.4 839.8 1260.9 710.3 1260.9 815.1 1334.2 775.1 1452.7 879.9 1379.4 984.7 1452.7 944.6 1334.2" fill="#f5f5f5"/><polygon points="944.6 1811.2 1049.4 1737.9 919.9 1737.9 879.9 1619.4 839.8 1737.9 710.3 1737.9 815.1 1811.2 775.1 1929.7 879.9 1856.4 984.7 1929.7 944.6 1811.2" fill="#f5f5f5"/><polygon points="944.6 2282.8 1049.4 2209.6 919.9 2209.6 879.9 2091.1 839.8 2209.6 710.3 2209.6 815.1 2282.8 775.1 2401.3 879.9 2328.1 984.7 2401.3 944.6 2282.8" fill="#f5f5f5"/></g></g></symbol>
+		</svg>
+
 	<div class="fh5co-loader"></div>
 	<div id="page">	
+
+		<div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+			<button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-language" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Switch language">
+			<!-- theme-icon-active --><svg class="bi my-1" aria-hidden="true"><use href="#language"></use></svg>
+			<span class="visually-hidden" id="bd-language-text">Toggle language</span>
+			</button>
+			<ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-language-text">
+				<li><button type="button" class="dropdown-item d-flex align-items-center" data-bs-language-value="en" aria-pressed="false"><svg class="bi me-2 opacity-100" aria-hidden="true"><use href="#en"></use></svg>English<svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg></button></li> 
+				<li><button type="button" class="dropdown-item d-flex align-items-center" data-bs-language-value="de" aria-pressed="false"><svg class="bi me-2 opacity-100" aria-hidden="true"><use href="#de"></use></svg>Deutsch<svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg> </button></li>
+			</ul>
+		</div>
+
 	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_4.webp);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
+		<div id="coverOverlay" class="overlay"></div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
+				<div class="col-md-8 col-md-offset-2 text-center" style="width: 100%;">
 					<div class="display-t js-fullheight">
 						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/trevor-3.jpeg);"></div>
-							<h1><span>Trevor Casey</span></h1>
-							<h3><span>Data Science | Psychology | Biotechnology</span></h3>
+							<div class="profile-thumb" style="background: url(images/trevor-5.jpeg);"></div>
+							<h1><span data-i18n="name">Trevor Casey</span></h1>
+							<h3><span data-i18n="traits">Data Science | Biotechnology | Behavioral Science</span></h3>
 							<p>
 								<ul class="fh5co-social-icons">
-									<li><a href="https://github.com/tjc801/"><i class="icon-github2"></i></a></li>
-									<li><a href="https://www.linkedin.com/in/trevorjcasey/"><i class="icon-linkedin3"></i></a></li>
+									<li><a id="socialIcon-1" href="https://github.com/tjc801/"><i class="icon-github2"></i></a></li>
+									<li><a id="socialIcon-1" href="https://www.linkedin.com/in/trevorjcasey/"><i class="icon-linkedin3"></i></a></li>
 								</ul>
 							</p>
 						</div>
@@ -48,27 +82,27 @@
 	<div id="fh5co-about" class="animate-box">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>About Me</h2>
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading" style="width: 100%;">
+					<h2 data-i18n="about">About Me</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
 					<ul class="info">
-						<li><span class="first-block">Name:</span><span class="second-block">Trevor Casey</span></li>
-						<li><span class="first-block">Email:</span><span class="second-block">info@trevorcasey.io</span></li>
-						<li><span class="first-block">Location:</span><span class="second-block">Washington, DC USA</span></li>
-						<li><span class="first-block">Work Auth:</span><span class="second-block">US, EU</span></li>
+						<li><span data-i18n="name_literal" class="first-block">Name:</span><span data-i18n="name" class="second-block">Trevor Casey</span></li>
+						<li><span data-i18n="email_literal" class="first-block">Email:</span><span data-i18n="email" class="second-block">info@trevorcasey.io</span></li>
+						<li><span data-i18n="location_literal" class="first-block">Location:</span><span data-i18n="location" class="second-block">Washington, DC USA</span></li>
+						<li><span data-i18n="workauth_literal" class="first-block">Work Auth:</span><span data-i18n="workauth" class="second-block">US, EU</span></li>
 					</ul>
 				</div>
 				<div class="col-md-8">
-					<h2>Welcome!</h2>
-					<p>For the past three years at The George Washington University, I have studied data science with a deep commitment to multidisciplinary inquiry. Alongside developing my expertise in biotechnology, I have also engaged with the fields of psychology and cellular and molecular biology (CMB). I am passionate about leveraging data science methodologies to identify relationships that shed light on pressing issues across a broad range of competencies. My understanding of both the natural and social sciences enables me to apply these techniques for well-rounded, actionable insights.</p>
-					<p>I believe that data scientists must prioritize the responsible dissemination of information. Guided by this principle, I am committed to making STEM more accessible through clear, thoughtful communication and expository writing.</p>
+					<h2 data-i18n="welcome">Welcome!</h2>
+					<p data-i18n="p1">Over the past three years at The George Washington University, I have studied data science with a commitment to multidisciplinary inquiry. Drawing on both natural and social sciences, I focus on translating complex data into insights that drive real-world decisions. Today, I develop and refine research-driven methodologies that help organizations anticipate emerging trends and strengthen their decision-making.</p>
+					<p data-i18n="p2">I believe data scientists have a responsibility to present information faithfully and transparently. Guided by this principle, I am committed to making rigorous research accessible through clear, tactful communication.</p>
 					<p>
 						<ul class="fh5co-social-icons">
-							<li><a href="https://github.com/tjc801/"><i class="icon-github2"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/trevorjcasey/"><i class="icon-linkedin3"></i></a></li>
+							<li><a id="socialIcon-2" href="https://github.com/tjc801/"><i class="icon-github2"></i></a></li>
+							<li><a id="socialIcon-2" href="https://www.linkedin.com/in/trevorjcasey/"><i class="icon-linkedin3"></i></a></li>
 						</ul>
 					</p>
 				</div>
@@ -76,14 +110,14 @@
 		</div>
 	</div>
 	<div id="fh5co-started" class="fh5co-bg-dark">
-		<div class="overlay"></div>
+		<div id="footerOverlay" class="overlay"></div>
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Let's Get Started!</h2>
-					<p>View my qualifications and skills below:</p>
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading" style="width: 100%;">
+					<h2 data-i18n="start">Let's Get Started!</h2>
+					<p data-i18n="quals">View my qualifications and skills below:</p>
 						<ul class="fh5co-social-icons">
-							<li><a href="/docs/Trevor%20Casey%20Resume.pdf" class="btn btn-default btn-lg" target="_blank">View Resume</a></li>
+							<li><a id="resumeButton" href="/docs/Trevor%20Casey%20Resume.pdf" class="btn btn-default btn-lg" target="_blank" data-i18n="resume">View Resume</a></li>
 						</ul>
 				</div>
 			</div>
@@ -103,7 +137,8 @@
 	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<!--<script src="js/bootstrap.min.js"></script>-->
+	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="js/jquery.stellar.min.js"></script>
 	<script src="js/google_map.js"></script>

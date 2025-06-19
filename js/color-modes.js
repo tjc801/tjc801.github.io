@@ -21,7 +21,7 @@
       workauth: "US & EU",
       welcome: "Welcome!",
       p1: "Over the past three years at The George Washington University, I have studied data science with a commitment to multidisciplinary inquiry. Drawing on both natural and social sciences, I focus on translating complex data into insights that drive real-world decisions. Today, I develop and refine research-driven methodologies that help organizations anticipate emerging trends and strengthen their decision-making.",
-      p2: "I believe data scientists have a responsibility to present information faithfully and transparently. Guided by this principle, I am committed to making rigorous research accessible through clear, tactful communication.",
+      p2: "I believe data scientists have a responsibility to present information transparently. Guided by this principle, I am committed to making STEM more approachable through clear and thoughtful communication.",
       start: "Let's Get Started!",
       quals: "View my qualifications and skills below:",
       resume: "View Resume",

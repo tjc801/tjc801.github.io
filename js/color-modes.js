@@ -10,7 +10,7 @@
   const translations = {
     en: {
       name: "Trevor Casey",
-      traits: "Data Science | Biotechnology | Behavioral Science",
+      traits: "Data Science | Biotechnology",
       about: "About Me",
       name_literal: "Name:",
       email_literal: "Email:",
@@ -29,7 +29,7 @@
     },
     de: {
       name: "Trevor Casey",
-      traits: "Datenwissenschaft | Biotechnologie | Verhaltenswissenschaft",
+      traits: "Datenwissenschaft | Biotechnologie",
       about: "Über mich",
       name_literal: "Name: ",
       email_literal: "E-Mail: ",
@@ -39,7 +39,7 @@
       workauth_literal: "Work Auth:",
       workauth: "US / EU",
       welcome: "Herzlich willkommen!",
-      p1: "Seit drei Jahren studiere ich Datenwissenschaft an der George Washington University. Ich verfolge einen interdisziplinären Studienansatz und interessiere mich besonders für Biotechnologie und Verhaltenswissenschaft. Ich benutze Datenmethoden, um Fragen zu stellen, Antworten zu finden und Themen besser zu verstehen.",
+      p1: "Seit drei Jahren studiere ich Datenwissenschaft an der George Washington University. Ich verfolge einen interdisziplinären Studienansatz und interessiere mich besonders für Biotechnologie. Ich benutze Datenmethoden, um Fragen zu stellen, Antworten zu finden und Themen besser zu verstehen.",
       p2: "Gute Kommunikation ist für mich ein zentraler Teil der Wissenschaft. Deshalb setze ich mich dafür ein, dass Arbeiten mit Daten verantwortungsvoll und verständlich kommuniziert werden.",
       start: "Legen wir los!",
       quals: "Hier finden Sie meine Qualifikationen und Fähigkeiten:",
@@ -83,14 +83,14 @@
 
       document.querySelector('#coverOverlay').style.background = ''
       document.querySelector('#footerOverlay').style.background = ''
-      document.querySelector('.fh5co-bg-dark').style.background = 'rgba(139,167,139,0.9)'
+      document.querySelector('.fh5co-bg-dark').style.background = 'rgba(127,195,240,0.9)'
       //$('div.overlay').animate({backgroundColor: '#FF0000'}, 'slow');
       //document.querySelector('div.overlay').style.background = 'rgba(255,0,0,0.9)'
       //document.querySelector('#coverOverlay').classList.add('overlay-deutsch')
       //document.querySelector('#coverOverlay').classList.remove('overlay')
       document.querySelector('#coverOverlay').classList.replace('overlay','overlay-deutsch')
-      //document.querySelector('body').style.background = "rgba(139,167,139,0.9)"
-      //document.querySelector('body').style.background = "rgba(139,167,139,0.9)"
+      //document.querySelector('body').style.background = "rgba(127,195,240,0.9)"
+      //document.querySelector('body').style.background = "rgba(127,195,240,0.9)"
       //document.querySelector('body').style.color = 'FloralWhite'
 
       const t1 = document.querySelectorAll('.info li .first-block')
@@ -113,7 +113,7 @@
       })*/
       t4.forEach(element => {
         //element.textContent = 'All demo classes updated.';
-        element.style.color = 'rgba(139,167,139,0.9)'
+        element.style.color = 'rgba(127,195,240,0.9)'
       })
       t5.forEach(element => {
         //element.textContent = 'All demo classes updated.';
@@ -123,7 +123,7 @@
       t6.forEach(element => {
         //element.textContent = 'All demo classes updated.';
         element.style.color = '#fff'
-        element.style.background = 'rgba(139,167,139,0.9)'
+        element.style.background = 'rgba(127,195,240,0.9)'
       })
 
       document.querySelectorAll('[data-i18n]').forEach(el => {

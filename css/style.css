@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(139,167,139,0.9);
+  background: rgba(127,195,240,0.9);
   transition: background .5s ease-in;
   -moz-transition: background .5s ease-in;
   -webkit-transition: background .5s ease-in;

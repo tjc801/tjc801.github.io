@@ -11,7 +11,7 @@
     en: {
       name: "Trevor Casey",
       traits: "Data Science | Biotechnology",
-      about: "About Me",
+      about: "Welcome!",
       name_literal: "Name:",
       email_literal: "Email:",
       email: "info@trevorcasey.io",
@@ -19,7 +19,7 @@
       location: "Washington, DC USA",
       workauth_literal: "Work Auth:",
       workauth: "US & EU",
-      welcome: "Welcome!",
+      welcome: "About Me",
       p1: "I am a fourth-year undergraduate studying data science at The George Washington University. Along with a degree concentration in biotechnology, I have also gained practical experience at organizations of varying scale; from early-stage, seed-round ventures to established research laboratories working to integrate biotechnology with the broader data lifecycle.",
       p2: "I approach data questions with a systems-oriented mindset: identifying signals within noise, converting unstructured inputs into reproducible pipelines, mapping technical and organizational dependencies, and stress-testing my own assumptions. I have successfully applied this approach while collaborating with experienced professionals, new contributors, and both technical and nontechnical audiences.",
       p3: "Nevertheless, I believe social responsibility is as essential to data science as its technical aspect. Since beginning my studies, I have prioritized open-access work where feasible and intentionally developed the ability to communicate complex ideas in clear language. Broadening participation in STEM and leveraging technology for good are integral to how I approach the field.",
@@ -30,7 +30,7 @@
     de: {
       name: "Trevor Casey",
       traits: "Datenwissenschaft | Biotechnologie",
-      about: "Über mich",
+      about: "Schön, dass Sie da sind!",
       name_literal: "Name: ",
       email_literal: "E-Mail: ",
       email: "info@trevorcasey.io",
@@ -38,7 +38,7 @@
       location: "Washington, DC USA",
       workauth_literal: "Work Auth:",
       workauth: "US / EU",
-      welcome: "Schön, dass Sie da sind!",
+      welcome: "Über mich",
       p1: "Ich studiere im vierten Jahr Data Science an der George Washington University (Washington, D.C.) mit Schwerpunkt im Bereich Biotechnology. Im Rahmen meines Studiums konnte ich praktische Erfahrungen in Organisationen unterschiedlicher Größenordnungen sammeln, von Early-Stage-Start-ups bis hin zu etablierten biotechnologischen Forschungseinrichtungen.",
       p2: "Meine Ausbildung in der Data Science prägt meine analytische Arbeitsweise. Ich arbeite hilfsbereit und systemorientiert: Ich identifiziere relevante Muster in komplexen Datensätzen, überführe unstrukturierte Daten in strukturierte und reproduzierbare Prozesse, analysiere technische sowie organisatorische Abhängigkeiten und überprüfe Annahmen kritisch. Dabei hatte ich das Privileg, an Projekten unterschiedlicher Größenordnung mit erfahrenen Fachkräften, neuen Teammitgliedern sowie technischen und nichttechnischen Zielgruppen zusammenzuarbeiten.",
       p3: "Neben der technischen Kompetenz ist mir ein verantwortungsvoller Umgang mit Daten ein besonderes Anliegen. Wenn es mir möglich ist, engagiere ich mich für offene Wissensformate und übersetze komplexe Inhalte in eine klare, verständliche Sprache. Transparenz und gesellschaftliche Verantwortung sind mir sehr wichtig.",
@@ -81,7 +81,7 @@
     if (language === 'de'){
 
       document.documentElement.lang = "de";
-      document.querySelector('#fh5co-header').style = 'background-image:url(images/cover_bg_1.webp);'
+      document.querySelector('#fh5co-header').style.backgroundImage = "url('images/cover_bg_1.webp')"
       document.querySelector('#coverOverlay').style.background = ''
       document.querySelector('#footerOverlay').style.background = ''
       //document.querySelector('.fh5co-bg-dark').style.background = 'rgba(127,195,240,0.9)'
@@ -144,7 +144,7 @@
     } else {
 
       document.documentElement.lang = "en";
-      document.querySelector('#fh5co-header').style = 'background-image:url(images/cover_bg_4.webp);'
+      document.querySelector('#fh5co-header').style.backgroundImage = "url('images/cover_bg_4.webp')"
       document.querySelector('#coverOverlay').style.background = ''
       document.querySelector('#footerOverlay').style.background = ''
       document.querySelector('.fh5co-bg-dark').style.background = 'rgba(154,165,202,0.9)'

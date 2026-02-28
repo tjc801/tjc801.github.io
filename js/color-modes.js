@@ -20,12 +20,12 @@
       workauth_literal: "Work Auth:",
       workauth: "US & EU",
       welcome: "Welcome!",
-      p1: "Over the past three years at The George Washington University, I have studied data science with a commitment to multidisciplinary inquiry. Drawing on both natural and social sciences, I focus on translating complex data into insights that drive real-world decisions. Today, I develop and refine research-driven methodologies that help organizations anticipate emerging trends and strengthen their decision-making.",
-      p2: "I believe data scientists have a responsibility to present information transparently. Guided by this principle, I am committed to making STEM more approachable through clear and thoughtful communication.",
+      p1: "I am a fourth-year undergraduate studying data science at The George Washington University. Along with a degree concentration in biotechnology, I have also gained practical experience at organizations of varying scale; from early-stage, seed-round ventures to established research laboratories working to integrate biotechnology with the broader data lifecycle.",
+      p2: "I approach data questions with a systems-oriented mindset: identifying signals within noise, converting unstructured inputs into reproducible pipelines, mapping technical and organizational dependencies, and stress-testing my own assumptions. I have successfully applied this approach while collaborating with experienced professionals, new contributors, and both technical and nontechnical audiences.",
+      p3: "Nevertheless, I believe social responsibility is as essential to data science as its technical aspect. Since beginning my studies, I have prioritized open-access work where feasible and intentionally developed the ability to communicate complex ideas in clear language. Broadening participation in STEM and leveraging technology for good are integral to how I approach the field.",
       start: "Let's Get Started!",
       quals: "View my qualifications and skills below:",
       resume: "View Resume",
-
     },
     de: {
       name: "Trevor Casey",
@@ -38,11 +38,12 @@
       location: "Washington, DC USA",
       workauth_literal: "Work Auth:",
       workauth: "US / EU",
-      welcome: "Herzlich willkommen!",
-      p1: "Seit drei Jahren studiere ich Datenwissenschaft an der George Washington University. Ich verfolge einen interdisziplinären Studienansatz und interessiere mich besonders für Biotechnologie. Ich benutze Datenmethoden, um Fragen zu stellen, Antworten zu finden und Themen besser zu verstehen.",
-      p2: "Gute Kommunikation ist für mich ein zentraler Teil der Wissenschaft. Deshalb setze ich mich dafür ein, dass Arbeiten mit Daten verantwortungsvoll und verständlich kommuniziert werden.",
-      start: "Legen wir los!",
-      quals: "Hier finden Sie meine Qualifikationen und Fähigkeiten:",
+      welcome: "Schön, dass Sie da sind!",
+      p1: "Ich studiere im vierten Jahr Data Science an der George Washington University (Washington, D.C.) mit Schwerpunkt im Bereich Biotechnology. Im Rahmen meines Studiums konnte ich praktische Erfahrungen in Organisationen unterschiedlicher Größenordnungen sammeln, von Early-Stage-Start-ups bis hin zu etablierten biotechnologischen Forschungseinrichtungen.",
+      p2: "Meine Ausbildung in der Data Science prägt meine analytische Arbeitsweise. Ich arbeite hilfsbereit und systemorientiert: Ich identifiziere relevante Muster in komplexen Datensätzen, überführe unstrukturierte Daten in strukturierte und reproduzierbare Prozesse, analysiere technische sowie organisatorische Abhängigkeiten und überprüfe Annahmen kritisch. Dabei hatte ich das Privileg, an Projekten unterschiedlicher Größenordnung mit erfahrenen Fachkräften, neuen Teammitgliedern sowie technischen und nichttechnischen Zielgruppen zusammenzuarbeiten.",
+      p3: "Neben der technischen Kompetenz ist mir ein verantwortungsvoller Umgang mit Daten ein besonderes Anliegen. Wenn es mir möglich ist, engagiere ich mich für offene Wissensformate und übersetze komplexe Inhalte in eine klare, verständliche Sprache. Transparenz und gesellschaftliche Verantwortung sind mir sehr wichtig.",
+      start: "Dann beginnen wir doch.",
+      quals: "Hier finden Sie meine Berufserfahrungen und Kompetenz:",
       resume: "Lebenslauf ansehen",
 
     },
@@ -80,10 +81,11 @@
     if (language === 'de'){
 
       document.documentElement.lang = "de";
-
+      document.querySelector('#fh5co-header').style = 'background-image:url(images/cover_bg_1.webp);'
       document.querySelector('#coverOverlay').style.background = ''
       document.querySelector('#footerOverlay').style.background = ''
-      document.querySelector('.fh5co-bg-dark').style.background = 'rgba(127,195,240,0.9)'
+      //document.querySelector('.fh5co-bg-dark').style.background = 'rgba(127,195,240,0.9)'
+      document.querySelector('.fh5co-bg-dark').style.background = 'rgba(45, 31, 114, 0.78)'
       //$('div.overlay').animate({backgroundColor: '#FF0000'}, 'slow');
       //document.querySelector('div.overlay').style.background = 'rgba(255,0,0,0.9)'
       //document.querySelector('#coverOverlay').classList.add('overlay-deutsch')
@@ -96,7 +98,7 @@
       const t1 = document.querySelectorAll('.info li .first-block')
       const t2 = document.querySelectorAll('.info li .second-block')
       const t3 = document.querySelectorAll('h2')
-      const t4 = document.querySelectorAll('#resumeButton')
+      const t4 = document.querySelector('#resumeButton')
       const t5 = document.querySelectorAll('#socialIcon-1')
       const t6 = document.querySelectorAll('#socialIcon-2')
       /*t1.forEach(element => {
@@ -111,10 +113,10 @@
         //element.textContent = 'All demo classes updated.';
         element.style.color = '#fff'
       })*/
-      t4.forEach(element => {
-        //element.textContent = 'All demo classes updated.';
-        element.style.color = 'rgba(127,195,240,0.9)'
-      })
+      //t4.style.color = 'rgba(127,195,240,0.9)'
+      t4.style.color = 'rgba(45, 31, 114, 0.78)'
+      t4.setAttribute("href","/docs/CASEY_Trevor-Lebenslauf.pdf")
+
       t5.forEach(element => {
         //element.textContent = 'All demo classes updated.';
         element.style.color = '#fff'
@@ -123,7 +125,8 @@
       t6.forEach(element => {
         //element.textContent = 'All demo classes updated.';
         element.style.color = '#fff'
-        element.style.background = 'rgba(127,195,240,0.9)'
+        element.style.background = 'rgba(45, 31, 114, 0.78)'
+        //element.style.background = 'rgba(127,195,240,0.9)'
       })
 
       document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -141,7 +144,7 @@
     } else {
 
       document.documentElement.lang = "en";
-
+      document.querySelector('#fh5co-header').style = 'background-image:url(images/cover_bg_4.webp);'
       document.querySelector('#coverOverlay').style.background = ''
       document.querySelector('#footerOverlay').style.background = ''
       document.querySelector('.fh5co-bg-dark').style.background = 'rgba(154,165,202,0.9)'
@@ -155,7 +158,7 @@
       const t1 = document.querySelectorAll('.info li .first-block')
       const t2 = document.querySelectorAll('.info li .second-block')
       const t3 = document.querySelectorAll('h2')
-      const t4 = document.querySelectorAll('#resumeButton')
+      const t4 = document.querySelector('#resumeButton')
       const t5 = document.querySelectorAll('#socialIcon-1')
       const t6 = document.querySelectorAll('#socialIcon-2')
       /*t1.forEach(element => {
@@ -170,10 +173,9 @@
         //element.textContent = 'All demo classes updated.';
         element.style.color = '#000'
       })*/
-      t4.forEach(element => {
-        //element.textContent = 'All demo classes updated.';
-        element.style.color = 'rgb(154,165,202)'
-      })
+      t4.style.color = 'rgb(154,165,202)'
+      t4.setAttribute("href","/docs/CASEY_Trevor-Resume.pdf")
+
       t5.forEach(element => {
         //element.textContent = 'All demo classes updated.';
         element.style.color = '#fff'
